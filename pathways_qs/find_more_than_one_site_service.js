@@ -1,0 +1,1 @@
+db.getCollection('agencies').find({Site:{$elemMatch:{"SiteService.1":{$exists: true}}}})

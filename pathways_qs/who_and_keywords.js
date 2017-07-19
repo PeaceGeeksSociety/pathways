@@ -1,0 +1,17 @@
+db.getCollection('sites').find({$and:
+    [
+        {
+            SiteDescription:{$regex:".*.*"}
+        },
+        {
+            "SiteService.Taxonomy":
+            {
+                $elemMatch:{
+                    "Code.who":{
+                        $eq:"Youth"
+                    }
+                }
+            }
+        }
+    ]
+})

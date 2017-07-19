@@ -1,3 +1,4 @@
 lxml
 simplejson
 pymongo
+demjson
