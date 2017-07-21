@@ -1,3 +1,5 @@
+node_modules/
+pathways-py
 .ipynb_checkpoints
 .idea/.name
 .idea/encodings.xml
