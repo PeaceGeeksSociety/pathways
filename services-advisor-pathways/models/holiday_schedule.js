@@ -12,3 +12,5 @@ var HolidayScheduleSchema = new Schema({
   startDate: Date,
   endDate: Date
 });
+
+module.exports = mongoose.model('HolidaySchedule', HolidayScheduleSchema );

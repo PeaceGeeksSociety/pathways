@@ -18,3 +18,5 @@ var ServiceSchema = new Schema({
   licenses: String,
   taxonomyIds: String
 });
+
+module.exports = mongoose.model('Service', ServiceSchema );

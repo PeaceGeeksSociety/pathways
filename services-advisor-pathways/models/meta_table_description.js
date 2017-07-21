@@ -7,3 +7,5 @@ var MetaTableDescriptionSchema = new Schema({
   language: String,
   characterSet: String
 });
+
+module.exports = mongoose.model('MetaTableDescription', MetaTableDescriptionSchema );

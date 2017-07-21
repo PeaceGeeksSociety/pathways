@@ -13,3 +13,5 @@ var OrganizationSchema = new Schema({
   yearIncorporated: Date, // TODO: only year
   legalStatus: String
 });
+
+module.exports = mongoose.model('Organization', OrganizationSchema );

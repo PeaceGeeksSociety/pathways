@@ -7,3 +7,5 @@ var ServiceTaxonomySchema = new Schema({
   taxonomyId: { type: String, required: true },
   taxonomyDetail: String
 });
+
+module.exports = mongoose.model('ServiceTaxonomy', ServiceTaxonomySchema );

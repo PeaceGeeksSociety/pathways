@@ -11,3 +11,5 @@ var MetadataSchema = new Schema({
   replacementValue: { type: String, required: true },
   updatedBy: { type: String, required: true }
 });
+
+module.exports = mongoose.model('MetaTableDescription', MetaTableDescriptionSchema );

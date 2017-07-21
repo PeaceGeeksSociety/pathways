@@ -7,3 +7,5 @@ var ServiceAreaSchema = new Schema({
   serviceArea: String,
   description: String
 });
+
+module.exports = mongoose.model('ServiceArea', ServiceAreaSchema );

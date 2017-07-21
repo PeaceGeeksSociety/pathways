@@ -15,3 +15,5 @@ var PhysicalAddressSchema = new Schema({
   postalCode: { type: String, required: true },
   country: String
 });
+
+module.exports = mongoose.model('PhysicalAddress', PhysicalAddressSchema );

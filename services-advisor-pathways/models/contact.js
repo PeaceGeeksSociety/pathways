@@ -11,3 +11,5 @@ var ContactSchema = new Schema({
   department: String,
   email: String
 });
+
+module.exports = mongoose.model('Contact', ContactSchema );

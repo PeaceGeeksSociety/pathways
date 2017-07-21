@@ -7,3 +7,5 @@ var FundingSchema = new Schema({
   serviceId: String,
   source: String
 });
+
+module.exports = mongoose.model('Funding', FundingSchema );

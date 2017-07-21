@@ -15,3 +15,5 @@ var PostalAddressSchema = new Schema({
   postalCode: { type: String, required: true },
   country: String
 });
+
+module.exports = mongoose.model('PostalAddress', PostalAddressSchema );

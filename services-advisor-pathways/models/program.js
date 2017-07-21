@@ -7,3 +7,5 @@ var ProgramSchema = new Schema({
   name: { type: String, required: true },
   alternateName: String
 });
+
+module.exports = mongoose.model('Program', ProgramSchema );

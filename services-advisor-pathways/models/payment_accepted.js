@@ -6,3 +6,5 @@ var PaymentAcceptedSchema = new Schema({
   serviceId: String,
   payment: String
 });
+
+module.exports = mongoose.model('PaymentAccepted', PaymentAcceptedSchema );

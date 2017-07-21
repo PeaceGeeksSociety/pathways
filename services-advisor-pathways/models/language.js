@@ -8,3 +8,5 @@ var LanguageSchema = new Schema({
   source: String,
   language: String
 });
+
+module.exports = mongoose.model('Language', LanguageSchema );

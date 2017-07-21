@@ -8,3 +8,5 @@ var TaxonomySchema = new Schema({
   parentName: String,
   vocabulary: String
 });
+
+module.exports = mongoose.model('Taxonomy', TaxonomySchema );

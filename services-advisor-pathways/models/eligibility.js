@@ -6,3 +6,5 @@ var EligibilitySchema = new Schema({
   serviceId: String,
   eligibility: String,
 });
+
+module.exports = mongoose.model('Eligibility', EligibilitySchema );

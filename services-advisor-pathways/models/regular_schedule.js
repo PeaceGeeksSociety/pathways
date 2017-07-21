@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var RegularSchedule = new Schema({
+var RegularScheduleSchema = new Schema({
   id:  { type: String, required: true },
   serviceId: String,
   locationId: String,
@@ -10,3 +10,5 @@ var RegularSchedule = new Schema({
   opensAt: Date, // TODO: Maybe?
   closesAt: Date //TODO: Maybe?
 });
+
+module.exports = mongoose.model('RegularSchedule', RegularScheduleSchema );

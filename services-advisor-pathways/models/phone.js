@@ -15,3 +15,5 @@ var PhoneSchema = new Schema({
   description: String,
   department: String
 });
+
+module.exports = mongoose.model('Phone', PhoneSchema );

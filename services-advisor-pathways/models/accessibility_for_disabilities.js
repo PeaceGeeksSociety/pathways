@@ -7,3 +7,5 @@ var AccessibilityForDisabilitiesSchema = new Schema({
   accessibility: String,
   details: String
 });
+
+module.exports = mongoose.model('AccessibilityForDisabilities', AccessibilityForDisabilitiesSchema );

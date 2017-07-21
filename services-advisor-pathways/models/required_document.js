@@ -6,3 +6,5 @@ var RequiredDocumentSchema = new Schema({
   serviceId: String,
   document: String
 });
+
+module.exports = mongoose.model('RequiredDocument', RequiredDocumentSchema );

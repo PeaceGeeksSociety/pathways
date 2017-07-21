@@ -4,11 +4,19 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var sites = require('./routes/sites');
 
 var app = express();
+mongoose.connect('mongodb://localhost:28000/bc211');
+//Get the default connection
+var db = mongoose.connection;
+
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/sites', sites);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -42,18 +51,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-// MongoDB Config
-var MongoClient = require('mongodb').MongoClient
-
-MongoClient.connect('mongodb://localhost:28000/bc211', function (err, db) {
-  if (err) throw err
-
-  db.collection('mammals').find().toArray(function (err, result) {
-    if (err) throw err
-
-    console.log(result)
-  })
-})
 
 module.exports = app;

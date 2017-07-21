@@ -11,3 +11,5 @@ var LocationSchema = new Schema({
   latitude: Number,
   longitude: Number
 });
+
+module.exports = mongoose.model('Location', LocationSchema );
