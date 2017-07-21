@@ -44,7 +44,6 @@ def parse_site(site):
     # add this to keep it clean.
     site['AgencyKey'] = site['Key']
     site['SiteService'] = site['SiteService'][0]
-    site['SiteService']['GeographicAreaServed'] = site['SiteService']['GeographicAreaServed'][0]
 
     # Parse the taxonomies into dictionaries.
     parsed_taxes = []
@@ -82,6 +81,6 @@ if __name__ == "__main__":
             for site in agency_sites:
                 new_site = parse_site(site)
 
-                # sites.insert_one(site)
+                sites.insert_one(site)
             del agency['Site']
-        # agencies.insert_one(agency)
+        agencies.insert_one(agency)
