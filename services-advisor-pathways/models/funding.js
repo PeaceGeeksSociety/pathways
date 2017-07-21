@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var FundingSchema = new Schema({
   id:  { type: String, required: true },
-  organizationId: String,
-  serviceId: String,
+  organization_id: String,
+  service_id: String,
   source: String
 });
 

@@ -3,12 +3,12 @@ var Schema = mongoose.Schema;
 
 var RegularScheduleSchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: String,
-  locationId: String,
-  serviceAtLocationId: String,
+  service_id: String,
+  location_id: String,
+  service_at_location_id: String,
   weekday: { type: Number, required: true },
-  opensAt: Date, // TODO: Maybe?
-  closesAt: Date //TODO: Maybe?
+  opens_at: Date, // TODO: Maybe?
+  closes_at: Date //TODO: Maybe?
 });
 
 module.exports = mongoose.model('RegularSchedule', RegularScheduleSchema );

@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var AccessibilityForDisabilitiesSchema = new Schema({
   id:  { type: String, required: true },
-  locationId: String,
-  accessibility: String,
-  details: String
+  location_id: { type: String, required: true },,
+  accessibility: { type: String, required: true },,
+  details: { type: String, required: true },
 });
 
 module.exports = mongoose.model('AccessibilityForDisabilities', AccessibilityForDisabilitiesSchema );

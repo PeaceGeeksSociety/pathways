@@ -3,11 +3,11 @@ var Schema = mongoose.Schema;
 
 var PhoneSchema = new Schema({
   id:  { type: String, required: true },
-  locationId: String,
-  serviceId: String,
-  organizationId: String,
-  contactId: String,
-  serviceAtLocationId: String,
+  location_id: String,
+  service_id: String,
+  organization_id: String,
+  contact_id: String,
+  service_at_location_id: String,
   number: { type: String, required: true },
   extension: Number,
   type: String, // TODO: only year

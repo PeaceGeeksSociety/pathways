@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var LocationSchema = new Schema({
   id:  { type: String, required: true },
-  organizationId: String,
+  organization_id: String,
   name: String,
-  alternateName: String,
+  alternate_name: String,
   description: String,
   transportation: String,
   latitude: Number,

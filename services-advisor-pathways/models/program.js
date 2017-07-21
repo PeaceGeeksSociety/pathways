@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var ProgramSchema = new Schema({
   id:  { type: String, required: true },
-  organizationId: { type: String, required: true },
+  organization_id: { type: String, required: true },
   name: { type: String, required: true },
-  alternateName: String
+  alternate_name: String
 });
 
 module.exports = mongoose.model('Program', ProgramSchema );

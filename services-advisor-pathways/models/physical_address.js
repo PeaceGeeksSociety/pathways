@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var PhysicalAddressSchema = new Schema({
   id:  { type: String, required: true },
-  locationId: String,
+  location_id: String,
   attention: String,
   address1: { type: String, required: true },
   address2: String,
@@ -11,8 +11,8 @@ var PhysicalAddressSchema = new Schema({
   address4: String,
   city: { type: String, required: true },
   region: String,
-  stateProvince: { type: String, required: true },
-  postalCode: { type: String, required: true },
+  state_province: { type: String, required: true },
+  postal_code: { type: String, required: true },
   country: String
 });
 

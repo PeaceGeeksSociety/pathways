@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var EligibilitySchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: String,
+  service_id: String,
   eligibility: String,
 });
 

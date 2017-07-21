@@ -3,13 +3,13 @@ var Schema = mongoose.Schema;
 
 var MetadataSchema = new Schema({
   id:  { type: String, required: true },
-  resourceId: { type: String, required: true },
-  lastActionDate: { type: Date, required: true },
-  lastActionType: { type: String, required: true },
-  fieldName: { type: String, required: true },
-  previousValue: { type: String, required: true },
-  replacementValue: { type: String, required: true },
-  updatedBy: { type: String, required: true }
+  resource_id: { type: String, required: true },
+  last_action_date: { type: Date, required: true },
+  last_action_type: { type: String, required: true },
+  field_name: { type: String, required: true },
+  previous_value: { type: String, required: true },
+  replacement_value: { type: String, required: true },
+  updated_by: { type: String, required: true }
 });
 
 module.exports = mongoose.model('MetaTableDescription', MetaTableDescriptionSchema );

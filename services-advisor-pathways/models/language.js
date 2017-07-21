@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var LanguageSchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: String,
-  locationId: String,
+  service_id: String,
+  location_id: String,
   source: String,
   language: String
 });

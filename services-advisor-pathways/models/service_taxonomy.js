@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var ServiceTaxonomySchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: { type: String, required: true },
-  taxonomyId: { type: String, required: true },
-  taxonomyDetail: String
+  service_id: { type: String, required: true },
+  taxonomy_id: { type: String, required: true },
+  taxonomy_detail: String
 });
 
 module.exports = mongoose.model('ServiceTaxonomy', ServiceTaxonomySchema );

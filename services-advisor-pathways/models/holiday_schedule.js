@@ -3,14 +3,14 @@ var Schema = mongoose.Schema;
 
 var HolidayScheduleSchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: String,
-  locationId: String,
-  serviceAtLocationId: String,
+  service_id: String,
+  location_id: String,
+  service_at_location_id: String,
   closed: {type: Boolean, require: true},
-  opensAt: Date,
-  closesAt: Date,
-  startDate: Date,
-  endDate: Date
+  opens_at: Date,
+  closes_at: Date,
+  start_date: Date,
+  end_date: Date
 });
 
 module.exports = mongoose.model('HolidaySchedule', HolidayScheduleSchema );

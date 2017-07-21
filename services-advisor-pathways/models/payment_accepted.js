@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var PaymentAcceptedSchema = new Schema({
   id:  { type: String, required: true },
-  serviceId: String,
+  service_id: String,
   payment: String
 });
 

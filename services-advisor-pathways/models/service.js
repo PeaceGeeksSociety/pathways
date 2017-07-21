@@ -3,20 +3,20 @@ var Schema = mongoose.Schema;
 
 var ServiceSchema = new Schema({
   id:  { type: String, required: true },
-  organizationId: { type: String, required: true },
-  programId: String,
+  organization_id: { type: String, required: true, alias='organization_id'},
+  program_id: String,
   name: { type: String, required: true },
-  alternateName: String,
+  alternate_name: String,
   description: String,
   url: String,
   status: { type: String, required: true },
-  interpretationServices: String,
-  applicationProcess: String,
-  waitTime: String,
+  interpretation_services: String,
+  application_process: String,
+  wait_time: String,
   fees: String,
   accreditations: String,
   licenses: String,
-  taxonomyIds: String
+  taxonomy_ids: String
 });
 
 module.exports = mongoose.model('Service', ServiceSchema );
