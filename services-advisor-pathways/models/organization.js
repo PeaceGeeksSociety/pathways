@@ -12,6 +12,6 @@ var OrganizationSchema = new Schema({
   taxId: String,
   year_incorporated: Date, // TODO: only year
   legal_status: String
-});
+}, { collection : 'organization' });
 
 module.exports = mongoose.model('Organization', OrganizationSchema );

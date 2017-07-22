@@ -6,6 +6,6 @@ var FundingSchema = new Schema({
   organization_id: String,
   service_id: String,
   source: String
-});
+}, { collection : 'funding' });
 
 module.exports = mongoose.model('Funding', FundingSchema );

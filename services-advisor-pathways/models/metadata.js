@@ -10,6 +10,6 @@ var MetadataSchema = new Schema({
   previous_value: { type: String, required: true },
   replacement_value: { type: String, required: true },
   updated_by: { type: String, required: true }
-});
+}, { collection : 'metadata' });
 
 module.exports = mongoose.model('MetaTableDescription', MetaTableDescriptionSchema );

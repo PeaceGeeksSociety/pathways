@@ -9,6 +9,6 @@ var RegularScheduleSchema = new Schema({
   weekday: { type: Number, required: true },
   opens_at: Date, // TODO: Maybe?
   closes_at: Date //TODO: Maybe?
-});
+}, { collection : 'regular_schedule' });
 
 module.exports = mongoose.model('RegularSchedule', RegularScheduleSchema );

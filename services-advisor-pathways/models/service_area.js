@@ -6,6 +6,6 @@ var ServiceAreaSchema = new Schema({
   service_id: String,
   service_area: String,
   description: String
-});
+}, { collection : 'service_area' });
 
 module.exports = mongoose.model('ServiceArea', ServiceAreaSchema );

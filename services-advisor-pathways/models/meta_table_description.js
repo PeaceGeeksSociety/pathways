@@ -6,6 +6,6 @@ var MetaTableDescriptionSchema = new Schema({
   name: String,
   language: String,
   character_set: String
-});
+}, { collection : 'meta_table_description' });
 
 module.exports = mongoose.model('MetaTableDescription', MetaTableDescriptionSchema );

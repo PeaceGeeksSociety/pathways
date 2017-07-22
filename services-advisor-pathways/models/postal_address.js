@@ -14,6 +14,6 @@ var PostalAddressSchema = new Schema({
   state_province: { type: String, required: true },
   postal_code: { type: String, required: true },
   country: String
-});
+}, { collection : 'postal_address' });
 
 module.exports = mongoose.model('PostalAddress', PostalAddressSchema );

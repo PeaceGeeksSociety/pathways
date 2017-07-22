@@ -6,6 +6,6 @@ var ServiceAtLocationSchema = new Schema({
   service_id: { type: String, required: true },
   location_id: { type: String, required: true },
   description: String
-});
+}, { collection : 'service_at_location' });
 
 module.exports = mongoose.model('ServiceAtLocation', ServiceAtLocationSchema );

@@ -10,6 +10,6 @@ var ContactSchema = new Schema({
   title: String,
   department: String,
   email: String
-});
+}, { collection : 'contact' });
 
 module.exports = mongoose.model('Contact', ContactSchema );

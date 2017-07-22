@@ -11,6 +11,6 @@ var HolidayScheduleSchema = new Schema({
   closes_at: Date,
   start_date: Date,
   end_date: Date
-});
+}, { collection : 'holiday_schedule' });
 
 module.exports = mongoose.model('HolidaySchedule', HolidayScheduleSchema );

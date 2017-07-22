@@ -7,6 +7,6 @@ var LanguageSchema = new Schema({
   location_id: String,
   source: String,
   language: String
-});
+}, { collection : 'language' });
 
 module.exports = mongoose.model('Language', LanguageSchema );

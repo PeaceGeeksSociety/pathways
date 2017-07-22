@@ -14,6 +14,6 @@ var PhoneSchema = new Schema({
   language: String,
   description: String,
   department: String
-});
+}, { collection : 'phone' });
 
 module.exports = mongoose.model('Phone', PhoneSchema );

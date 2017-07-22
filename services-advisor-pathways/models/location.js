@@ -10,6 +10,6 @@ var LocationSchema = new Schema({
   transportation: String,
   latitude: Number,
   longitude: Number
-});
+}, { collection : 'location' });
 
 module.exports = mongoose.model('Location', LocationSchema );

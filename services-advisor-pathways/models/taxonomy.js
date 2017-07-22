@@ -7,6 +7,6 @@ var TaxonomySchema = new Schema({
   parent_id: String,
   parent_name: String,
   vocabulary: String
-});
+}, { collection : 'taxonomy' });
 
 module.exports = mongoose.model('Taxonomy', TaxonomySchema );
