@@ -21,13 +21,13 @@ db.getCollection('sites').createIndex(
     {
         Name: "text",
         SiteDescription: "text",
-        SiteService.Description: "text"
+        "SiteService.Description": "text"
     },
     {
         weights: {
             Name: 3,
             SiteDescription: 10,
-            SiteService.Description: 10
+            "SiteService.Description": 10
         },
         name: "TextIndex"
     }

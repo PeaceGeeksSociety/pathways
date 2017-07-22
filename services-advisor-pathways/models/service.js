@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var ServiceSchema = new Schema({
   id:  { type: String, required: true },
-  organization_id: { type: String, required: true, alias='organization_id'},
+  organization_id: { type: String, required: true},
   program_id: String,
   name: { type: String, required: true },
   alternate_name: String,
@@ -17,6 +17,6 @@ var ServiceSchema = new Schema({
   accreditations: String,
   licenses: String,
   taxonomy_ids: String
-});
+}, { collection : 'service' });
 
 module.exports = mongoose.model('Service', ServiceSchema );

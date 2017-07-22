@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var sites = require('./routes/sites');
+var services = require('./routes/services');
 
 var app = express();
 mongoose.connect('mongodb://localhost:28000/bc211');
@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/sites', sites);
+app.use('/services', services);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

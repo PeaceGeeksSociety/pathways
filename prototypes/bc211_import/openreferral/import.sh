@@ -1,0 +1,26 @@
+BC211_DATA_PATH=/Users/tukrre/Documents/peacegeeks/bc211/iCarolExport-BC211-HSDS-20170721_170621
+
+mongoimport --port=28000 -d bc211 -c accessibility_for_disabilities --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-accessibility_for_disabilities-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c organization --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-organization-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c accreditation --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-accreditation-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c payment_accepted --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-payment_accepted-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c contact --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-contact-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c eligibility --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-eligibility-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c phone --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-phone-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c fee --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-fee-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c postal_address --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-postal_address-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c physical_address --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-physical_address-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c funding --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-funding-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c program --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-program-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c regular_schedule --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-regular_schedule-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c holiday_schedule --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-holiday_schedule-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c interpretation_services --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-interpretation_services-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c required_document --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-required_document-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c service --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-service-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c service_area --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-service_area-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c service_at_location --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-service_at_location-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c service_taxonomy --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-service_taxonomy-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c language --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-language-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c license --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-license-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c location --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-location-20170721_170621.csv --headerline
+mongoimport --port=28000 -d bc211 -c metadata --type csv --file $BC211_DATA_PATH/iCarolExport-BC211-metadata-20170721_170621.csv --headerline
